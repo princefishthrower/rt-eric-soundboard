@@ -1,0 +1,220 @@
+/*PAGE STYLES*/
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0px;
+}
+p {
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+/*BOARD STYLES*/
+#soundBoard{
+	max-width: 1140px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 40px 0;
+
+}
+.board{
+    background-color: #cc8800;
+    background-image: url(../img/wood-pattern.png);
+	text-align: center;
+}
+.board_bottom{
+	width:auto;
+    /* background:-o-linear-gradient(#b9b9b9,#a9a9a9,#a1a1a1,#aaa 191%);
+    background:-ms-linear-gradient(#b9b9b9,#a9a9a9,#a1a1a1,#aaa 191%);
+    background:-moz-linear-gradient(#b9b9b9,#a9a9a9,#a1a1a1,#aaa 191%);
+    background:-webkit-linear-gradient(#b9b9b9,#a9a9a9,#a1a1a1,#aaa 191%);
+    background:linear-gradient(#b9b9b9,#a9a9a9,#a1a1a1,#aaa 191%); */
+    background-color: #906000;
+	height: 20px;
+	position: relative;
+}
+.board_bottom:before, .board_bottom:after{
+	content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+}
+.board_bottom:before {
+    left: 0;
+    border-left: 6px solid #fff;
+}
+
+.board_bottom:after {
+    right: 0;
+    border-right: 6px solid #fff;
+}
+
+/*BUTTONS STYLES*/
+.soundBoard-button{
+	max-width:103px;
+	display:inline-block;
+	margin: -10px 10px 55px;
+	position:relative;
+	cursor: pointer;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+	-webkit-highlight: none;
+}
+
+.button_top {
+    position: relative;
+    width:100px;
+    height:100px;
+}
+
+#soundBoard .button {
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+    background: -o-linear-gradient(244deg, #a23333 -30%,#e01010 79%,white 100%);
+    background: -ms-linear-gradient(244deg, #a23333 -30%,#e01010 79%,white 100%);
+    background: -moz-linear-gradient(244deg, #a23333 -30%,#e01010 79%,white 100%);
+    background: -webkit-linear-gradient(244deg, #a23333 -30%,#e01010 79%,white 100%);
+    background: linear-gradient(244deg, #a23333 -30%,#e01010 79%,white 100%);
+    border-radius: 180%;
+    position: relative;
+    z-index: 5;
+}
+
+.pressed .button {
+    top: 2px;
+}
+
+.button_bevel {
+    width: 100%;
+    height: 100%;
+    max-width: 103px;
+    max-height: 103px;
+    background: -o-linear-gradient(-281deg,#f1a9a9,#b50505,#410202);
+    background: -ms-linear-gradient(-281deg,#f1a9a9,#b50505,#410202);
+    background: -moz-linear-gradient(-281deg,#f1a9a9,#b50505,#410202);
+    background: -webkit-linear-gradient(-281deg,#f1a9a9,#b50505,#410202);
+    background: linear-gradient(-281deg,#f1a9a9,#b50505,#410202);
+    border-radius: 180px;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    z-index: 4;
+}
+.pressed .button_bevel{
+	top:5px;
+}
+
+.button_bottom {
+    background: black;
+    width: 70px;
+    height: 70px;
+    border-radius: 180%;
+    position: absolute;
+    bottom: -8px;
+    left: 15px;
+}
+.pressed .button_bottom{
+	bottom: 0;
+}
+
+.tape {
+    position: absolute;
+    top: 36px;
+    width: 100%;
+    background: -o-linear-gradient(90deg,#ccc -17%,white,white,white,#ccc 118%);
+    background: -ms-linear-gradient(90deg,#ccc -17%,white,white,white,#ccc 118%);
+    background: -moz-linear-gradient(90deg,#ccc -17%,white,white,white,#ccc 118%);
+    background: -webkit-linear-gradient(90deg,#ccc -17%,white,white,white,#ccc 118%);
+    background: linear-gradient(90deg,#ccc -17%,white,white,white,#ccc 118%);
+    z-index: 4;
+    border: 1px solid #efefef;
+    left: -3px;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px 1px;
+    font-family: Arial;
+    font-weight: bold;
+    text-shadow: 0 0 1px #bbb;
+    font-size: 13px;
+    -webkit-highlight: none;
+     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 7;
+    box-shadow: 6px 1px 9px #666;
+    line-height: 16px;
+}
+.pressed .tape{
+   	top: 38px;
+}
+
+.tape.tape2 {
+    top: 34px;
+    padding: 1px 0;
+    left: -1px;
+}
+.pressed .tape.tape2 {
+	top: 36px;
+}
+
+.tape.tape2 + .tape.tape2 {
+	top: 55px;
+	padding: 1px 2px;
+	left: -2px;
+}
+.pressed  .tape.tape2 + .tape.tape2 {
+	top: 57px;
+}
+
+.tape.tape3 {
+	top: 31px;
+	padding: 1px 0;
+	left: -1px;
+	font-size:12px;
+	font-weight: normal;
+}
+.pressed .tape.tape3 {
+	top: 33px;
+}
+
+.tape.tape3 + .tape.tape3 {
+	top: 49px;
+	padding: 1px 2px;
+	left: -2px;
+}
+.pressed  .tape.tape3 + .tape.tape3 {
+	top: 51px;
+}
+
+.tape.tape3 + .tape.tape3 + .tape.tape3 {
+	top: 67px;
+	padding: 0px 0;
+	left: -1px;
+}
+.pressed  .tape.tape3 + .tape.tape3 + .tape.tape3 {
+	top: 69px;
+
+}
+
+.button_shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 180%;
+    box-shadow: 11px 21px 16px #222;
+    top: 0;
+    transition: ease all 70ms;
+}
+
+.pressed .button_shadow {
+    box-shadow: 4px 11px 6px #222;
+}
