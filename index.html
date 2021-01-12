@@ -1,188 +1,209 @@
 <head>
-        <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-      <link type="text/css" rel="stylesheet" href="./styles/styles.css">
-      <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Tangerine:700&display=swap" rel="stylesheet">
-      <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    </head>
-    <div class="story">
-        <div class="wildcard">
-            <p><i>Introducing...</i><p>
-            <h1>The Eric Soundboard!</h1>
-            <div id="soundBoard">
-                <div class="board">
-                        <div class="soundBoard-button angle2" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/YeahBaybee.mp3">
-                            <div class="button_top">
-                                <div class="button"></div>
-                                <div class="button_bevel"></div>
-                                <div class="button_shadow"></div>
-                                <div class="tape tape1">YEAH BAYBEE!!!</div>
-                            </div>
-                            <div class="button_bottom"></div>
-                        </div>
-                    <div class="soundBoard-button angle1" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/IDontKnow.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">I don't know</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle2" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/I-Dont-Know.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">I - don't - know</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle2" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/IReallyDontKnow.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">I REALLY don't know!</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle3" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/MmmIDontKnow.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">Mmm... I don't know</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle3" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/DoIt.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">DO IT!!!</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle2" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/Hi.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">Hi</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle2" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/ImOverHere.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">I'm over here</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle1" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/ImRightHere.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">I'm right here</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle1" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/ListenIveGotAMeeting.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">Listen, I've got a meeting</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle2" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/PleaseDoAnAdRead.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">Please do an ad read</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle1" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/PleaseDoAnAdReadNow.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">Please do an ad read now</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle1" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/Yeah.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">Yeah</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                    <div class="soundBoard-button angle3" data-audio="https://coffee-app.sfo2.cdn.digitaloceanspaces.com/rt-eric-soundboard-sounds/No.mp3">
-                        <div class="button_top">
-                            <div class="button"></div>
-                            <div class="button_bevel"></div>
-                            <div class="button_shadow"></div>
-                            <div class="tape tape1">No!</div>
-                        </div>
-                        <div class="button_bottom"></div>
-                    </div>
-                </div>
-                <div class="board_bottom" style="display: block;"></div>
-            </div>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <link type="text/css" rel="stylesheet" href="./styles/styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Tangerine:700&display=swap"
+    rel="stylesheet"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width,minimum-scale=1,initial-scale=1"
+  />
+</head>
+<div class="story">
+  <div class="wildcard">
+    <p><i>Introducing...</i></p>
+    <p></p>
+    <h1>The Eric Soundboard!</h1>
+    <div id="soundBoard">
+      <div class="board">
+        <div class="soundBoard-button angle2" id="YeahBaybee">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">YEAH BAYBEE!!!</div>
+          </div>
+          <div class="button_bottom"></div>
         </div>
-        <script>
-        var audio = new Audio();
-    
-        $('.soundboard-button').each(function () {
-            var $this = $(this);
-            $this.on("mousedown", function () {
-                // stop audio from any and all other buttons
-                audio.pause();
-                // add 'pressed' class to button and play sound
-                $(this).addClass("pressed");
-                // set source play sound
-                audio.src = $(this).data('audio');
-                audio.play();
-                
-            });
+        <div class="soundBoard-button angle1" id="IDontKnow">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">I don't know</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle2" id="I-Dont-Know">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">I - don't - know</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle2" id="IReallyDontKnow">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">I REALLY don't know!</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle3" id="MmmIDontKnow">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">Mmm... I don't know</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle3" id="DoIt">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">DO IT!!!</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle2" id="Hi">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">Hi</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle2" id="ImOverHere">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">I'm over here</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle1" id="ImRightHere">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">I'm right here</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle1" id="ListenIveGotAMeeting">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">Listen, I've got a meeting</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle2" id="PleaseDoAnAdRead">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">Please do an ad read</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle1" id="PleaseDoAnAdReadNow">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">Please do an ad read now</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle1" id="Yeah">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">Yeah</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+        <div class="soundBoard-button angle3" id="No">
+          <div class="button_top">
+            <div class="button"></div>
+            <div class="button_bevel"></div>
+            <div class="button_shadow"></div>
+            <div class="tape tape1">No!</div>
+          </div>
+          <div class="button_bottom"></div>
+        </div>
+      </div>
+      <div class="board_bottom" style="display: block"></div>
+    </div>
+  </div>
+  <script>
+    var audio = new Audio();
+
+    $(".soundboard-button").each(function () {
+      var $this = $(this);
+      $this.on("mousedown", function () {
+        // stop audio from any and all other buttons
+        audio.pause();
+        // add 'pressed' class to button and play sound
+        $(this).addClass("pressed");
+        // set source play sound
+        audio.src = $(this).data("audio");
+        audio.play();
+      });
+    });
+
+    $(".soundboard-button").each(function () {
+      var $this = $(this);
+      $this.on("tap", function () {
+        // stop audio from any and all other buttons
+        audio.pause();
+        // add 'pressed' class to button and play sound
+        $(this).addClass("pressed");
+        // set source play sound
+        audio.src = $(this).data("audio");
+        audio.play();
+      });
+    });
+
+    $("body").each(function () {
+      var $this = $(this);
+      $this.on("mouseup", function () {
+        $(".soundboard-button").each(function () {
+          // remove 'pressed' class from button
+          $(this).removeClass("pressed");
         });
-    
-        $('.soundboard-button').each(function () {
-            var $this = $(this);
-            $this.on("tap", function () {
-                // stop audio from any and all other buttons
-                audio.pause();
-                // add 'pressed' class to button and play sound
-                $(this).addClass("pressed");
-                // set source play sound
-                audio.src = $(this).data('audio');
-                audio.play();
-                
-            });
-        });
-    
-        $('body').each(function () {
-            var $this = $(this);
-            $this.on("mouseup", function () {
-                
-                $('.soundboard-button').each(function () {
-                    // remove 'pressed' class from button
-                    $(this).removeClass("pressed");
-                });    
-            });
-        });
-        </script>
+      });
+    });
+
+    $(".soundboard-button").each(function () {
+      var $this = $(this);
+      var jsonFileName = "data/" + $this.attr("id") + ".json";
+      var id = "#" + $this.attr("id");
+      console.log(jsonFileName);
+      console.log(id);
+      $.getJSON(jsonFileName, function (data) {
+
+        $(id).data("audio", data.data);
+      });
+    });
+  </script>
+</div>
